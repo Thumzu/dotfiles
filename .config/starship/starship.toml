@@ -1,0 +1,87 @@
+# Zukuo's Custom Starship Prompt
+# Modified Source: ChrisTitus - Bash Github
+
+format = """
+ [](zero)\
+$os\
+[](bg:first fg:zero)\
+$username\
+[](bg:second fg:first)\
+$directory\
+[](fg:second bg:third)\
+$git_branch\
+$git_status\
+[](fg:third) \
+"""
+command_timeout = 5000
+add_newline = true
+palette = "defaultdark"
+
+# Default Dark 256 Colors
+[palettes.defaultdark]
+zero = "#2A2A2A"
+first = "#353535"
+ffg = "#A1B56C" # first fg (green)
+second = "#4A4A4A"
+gbfg = "#F7CA88" # git branch fg
+gsfg = "#F7CA88" # git status fg
+third = "#5A5A5A"
+blue = "#7CAFC2"
+
+# Catppuccin Mocha Colors
+[palettes.catppuccin_mocha]
+zero = "#24273A"      # base
+first = "#313244"     # surface0
+ffg = "#a6e3a1"       # green (for first fg)
+second = "#45475a"    # surface1
+gbfg = "#f9e2af"      # yellow (git branch fg)
+gsfg = "#f9e2af"      # yellow (git status fg)
+third = "#585b70"     # surface2
+blue = "#89b4fa"      # blue
+
+# Swap with OS for zero'th module
+[hostname]
+ssh_only = false
+style = "fg:blue bg:zero"
+format = "[$hostname ]($style)"
+trim_at = "."
+disabled = true
+
+[os]
+format = "[ $symbol ]($style)"
+style = "fg:white bg:zero"
+disabled = false
+
+# TODO: Test and see if arch logo is better blue or white
+
+[os.symbols]
+Arch = "[ ](fg:blue bg:zero)"
+EndeavourOS = "[ ](fg:blue bg:zero)"
+Ubuntu = "[󰕈 ](fg:purple bg:zero)"
+Linux = " "
+Macos = " "
+Windows = " "
+
+[username]
+show_always = true
+style_user = "fg:ffg bg:first"
+style_root = "fg:ffg bg:first"
+format = '[ $user ]($style)'
+
+[directory]
+style = "fg:ffg bg:second"
+format = "[ $path ]($style)"
+truncation_length = 0
+truncate_to_repo = false
+
+# TODO: Make the git powerline modules only appear in a git directories
+#       Not sure if entirely possible yet, could move powerline symbols down...
+
+[git_branch]
+symbol = ""
+style = "fg:gbfg bg:third"
+format = '[ $symbol $branch ]($style)'
+
+[git_status]
+style = "fg:gsfg bg:third"
+format = '[$all_status$ahead_behind ]($style)'
