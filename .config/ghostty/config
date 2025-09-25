@@ -2,19 +2,24 @@
 # vim: set ft=config:
 
 # Colors
-theme = defaultdark
+theme = Catppuccin Macchiato
 
 # Fonts
 font-family = Berkeley Mono
+font-size = 18
 adjust-cell-height = 20%
-# font-thicken = true
+font-thicken = true
 # window-colorspace = display-p3
 
 # Decorations
 macos-titlebar-style = hidden
 mouse-hide-while-typing = true
-# window-padding-x = 10
-# window-padding-y = 10
+window-padding-x = 10
+window-padding-y = 10
+
+# Background Blur
+background-opacity = 0.9
+background-blur = 50
 
 # Keybinds
 keybind = alt+backspace=text:\x17
