@@ -1,15 +1,16 @@
-# Zukuo's Ghostty Config
-# vim: set ft=config:
+# Thumzu's Ghostty Config
 
 # Colors
 theme = Catppuccin Macchiato
 
 # Fonts
-font-family = Berkeley Mono
+# font-family = Berkeley Mono
+font-family = Iosevka
+
 font-size = 18
 adjust-cell-height = 20%
 font-thicken = true
-# window-colorspace = display-p3
+window-colorspace = display-p3
 
 # Decorations
 macos-titlebar-style = hidden
@@ -18,8 +19,8 @@ window-padding-x = 10
 window-padding-y = 10
 
 # Background Blur
-background-opacity = 0.9
-background-blur = 50
+# background-opacity = 0.5
+# background-blur = 25
 
 # Keybinds
 keybind = alt+backspace=text:\x17
