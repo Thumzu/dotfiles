@@ -3,7 +3,7 @@ return {
         "coffebar/neovim-project",
         opts = {
             -- Add all project dirs here
-            projects = {"~/Git/*","~/Documents/myCode/*"},
+            projects = {"~/Git/*", os.getenv("DEV_DIR") .. "/*"},
             picker = { type = "telescope" },
             last_session_on_startup = true,
             dashboard_mode = true,
