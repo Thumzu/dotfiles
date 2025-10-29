@@ -2,10 +2,12 @@
 
 # Colors
 theme = Catppuccin Macchiato
+# theme = gruber-darker
 
 # Fonts
 # font-family = Berkeley Mono
-font-family = Iosevka
+# font-family = Iosevka NF
+font-family = JetBrains Mono NF
 
 font-size = 18
 adjust-cell-height = 20%
@@ -19,8 +21,9 @@ window-padding-x = 10
 window-padding-y = 10
 
 # Background Blur
-# background-opacity = 0.5
-# background-blur = 25
+background-opacity = 0.7
+background-blur = 20
+# background-opacity-cells = true
 
 # Keybinds
 keybind = alt+backspace=text:\x17
@@ -31,4 +34,4 @@ keybind = ctrl+shift+k=unbind
 keybind = ctrl+shift+l=unbind
 
 # Neovide Like Cursor
-custom-shader = ./shaders/cursor_smear.glsl
+# custom-shader = ./shaders/cursor_smear.glsl
