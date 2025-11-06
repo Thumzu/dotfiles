@@ -24,23 +24,17 @@ disabled = true
 
 # Simple
 
-# [character]
-# vicmd_symbol = "[>](bold green)"
-# success_symbol = '[❯](bold green)' 
-# error_symbol = '[❯](bold red)' 
+[character]
+vicmd_symbol = '[>](bold cyan)'
+success_symbol = '[❯](bold green)' 
+error_symbol = '[❯](bold red)' 
 
 # Arrow with colon (JetBrains)
 
-[character]
-vicmd_symbol = "[➜](bold green) [>](bold cyan)"
-success_symbol = '[➜](bold green) [:](bold cyan)'
-error_symbol = '[➜](bold red) [:](bold cyan)'
-# Arrow with colon (Iosevka)
-
 # [character]
-# vicmd_symbol = "[ ](bold green) [>](bold cyan)"
-# success_symbol = '[ ](bold green) [:](bold cyan)'
-# error_symbol = '[ ](bold red) [:](bold cyan)'
+# vicmd_symbol = '[➜](bold green) [>](bold cyan)'
+# success_symbol = '[➜](bold green) [:](bold cyan)'
+# error_symbol = '[➜](bold red) [:](bold cyan)'
 
 # Colors & Icons
 
