@@ -13,10 +13,15 @@ format = """
 $directory\
 $character\
 """
-
 # disable timer
 [cmd_duration]
 disabled = true
+
+# show full length prompt
+[directory]
+read_only = " 󰌾"
+truncation_length = 0
+truncate_to_repo = false
 
 ###########
 # Prompts # 
@@ -95,9 +100,6 @@ symbol = " "
 
 [deno]
 symbol = " "
-
-[directory]
-read_only = " 󰌾"
 
 [docker_context]
 symbol = " "
