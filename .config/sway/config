@@ -2,7 +2,7 @@
 
 # Thumzu's Additions
 
-include catppuccin-macchiato
+include catppuccin-mocha
 
 gaps inner 10
 gaps outer 10
@@ -52,7 +52,7 @@ set $menu wofi --show drun
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/tux.jpg fill
+output * bg ~/Pictures/clearing.png fill
 #
 # Example configuration:
 #
