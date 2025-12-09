@@ -26,7 +26,7 @@ alias v="nvim"
 alias vim="nvim"
 
 alias eZ="nvim $HOME/zsh/.zshrc"
-alias Z="source $HOME/zsh/.zshrc"
+alias Z="source $HOME/.config/zsh/.zshrc"
 
 # Tmux
 alias tmk="tmux kill-server"
@@ -60,6 +60,17 @@ echo -ne '\e[6 q'
 
 cce() { local file; file=$(fd . $HOME/.config/ --type f --type symlink --follow -H -d 2 | fzf) && $EDITOR $file; unset file ; }
 ce() { local file; file=$(yadm list -a | sed "s|^|$HOME\/|" | fzf) && $EDITOR $file; unset file ; }
+
+vp() {
+    local project_root
+    if project_root=$(git rev-parse --show-toplevel 2>/dev/null); then
+        project_root=$(echo "$project_root" | sed "s;$HOME;~;")
+    else
+        project_root=$(pwd | sed "s;$HOME;~;")
+    fi
+    $EDITOR "+NeovimProjectLoad ${project_root}"
+    unset project_root
+}
 
 # Homebrew
 export PATH=/opt/homebrew/bin:$PATH
