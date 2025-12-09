@@ -159,6 +159,7 @@ return {
 					end,
 				},
 			})
+			vim.lsp.enable("gdscript")
 		end,
 	},
 }
