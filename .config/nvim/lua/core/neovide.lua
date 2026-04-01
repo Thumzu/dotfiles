@@ -1,6 +1,13 @@
-vim.o.guifont = "JetbrainsMono Nerd Font:h15:#h-none"
+-- vim.o.guifont = "JetbrainsMono Nerd Font:h15:#h-none"
+vim.o.guifont = "Iosevka Nerd Font:h18:#h-none"
+-- vim.o.guifont = "Berkeley Mono:h18:#h-none"
 
 vim.opt.linespace = 5
+
+vim.g.neovide_padding_top = 20
+vim.g.neovide_padding_bottom = 20
+vim.g.neovide_padding_right = 20
+vim.g.neovide_padding_left = 20
 
 vim.g.neovide_cursor_animation_length = 0.05
 vim.g.neovide_cursor_trail_size = 0.5
@@ -8,16 +15,7 @@ vim.g.neovide_cursor_trail_size = 0.5
 vim.g.neovide_input_macos_option_key_is_meta = "only_left"
 vim.g.neovide_hide_mouse_when_typing = true
 
--- Helper function for transparency formatting
-local alpha = function()
-  return string.format("%x", math.floor(255 * vim.g.transparency or 0.8))
-end
--- g:neovide_opacity should be 0 if you want to unify transparency of content and title bar.
-vim.g.neovide_opacity = 0.0
-vim.g.transparency = 0.8
-vim.g.neovide_background_color = "#24273a" .. alpha()
-vim.g.neovide_window_blurred = true
-
+vim.g.neovide_show_border = true
 
 -- Allow clipboard copy paste in neovim (MacOS)
 vim.keymap.set('v', '<D-c>', '"+y')
