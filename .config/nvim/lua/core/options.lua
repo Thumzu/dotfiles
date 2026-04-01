@@ -21,12 +21,24 @@ vim.opt.laststatus = 3 -- only one statusbar per window
 -- vim.opt.statusline = "%=%t%="
 vim.o.winborder = "rounded"
 
+-- Centre screen after commands
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "<C-f>", "<C-f>zz")
+vim.keymap.set("n", "<C-b>", "<C-b>zz")
+
+vim.keymap.set("n", "G", "Gzz")
+
+
 -- Misc
 vim.opt.spelllang = "en_gb"
 vim.opt.spell = false
 vim.opt.title = false
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+-- Clear search highlights with Esc in normal mode (DOESN'T WORK IN A CLEAN NVIM)
+vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Neovide
 if vim.g.neovide then
