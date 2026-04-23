@@ -29,12 +29,24 @@ truncate_to_repo = false
 
 # Simple
 
-[character]
-vicmd_symbol = '[>](bold cyan)'
-success_symbol = '[❯](bold green)' 
-error_symbol = '[❯](bold red)' 
+# [character]
+# vicmd_symbol = '[>](bold cyan)'
+# success_symbol = '[❯](bold green)' 
+# error_symbol = '[❯](bold red)' 
 
-# Arrow with colon (JetBrains)
+# Gruber Darker
+
+# [character]
+# vicmd_symbol = "[>](bold #ffdd33)"      # yellow
+# success_symbol = "[❯](bold #ffdd33)"
+# error_symbol = "[❯](bold #ff4f58)"      # red
+
+# Coding With Sphere Custom Theme
+
+[character]
+vicmd_symbol = "[❮](bold #C1C88D)"      # Directory/SpecialChar color - more green
+success_symbol = "[❯](bold #C1C88D)"    # greenish pastel
+error_symbol = "[❯](bold #C34143)"      # muted red
 
 # [character]
 # vicmd_symbol = '[➜](bold green) [>](bold cyan)'
