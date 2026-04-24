@@ -14,9 +14,19 @@ after-login-command = []
 # You can use it to add commands that run after AeroSpace startup.
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
+
+# Janky Borders
+
+# Catppuccin
+# after-startup-command = [
+#   'exec-and-forget borders active_color=0xffcdd6f4 inactive_color=0xff313244 width=5.0'
+# ]
+
+# Gruber Darker
 after-startup-command = [
-  'exec-and-forget borders active_color=0xffcdd6f4 inactive_color=0xff313244 width=5.0'
+  'exec-and-forget borders active_color=0xffe4e4ef inactive_color=0xff5f5f5f width=1.5'
 ]
+
 # Start AeroSpace at login
 start-at-login = true
 
@@ -55,12 +65,12 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 #                 Monitor pattern is the same as for 'workspace-to-monitor-force-assignment'.
 #                 See: https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 [gaps]
-inner.horizontal = 30
-inner.vertical =   30
-outer.left =       30
-outer.bottom =     30
-outer.top =        30
-outer.right =      30
+inner.horizontal = 10
+inner.vertical =   10
+outer.left =       10
+outer.bottom =     10
+outer.top =        10
+outer.right =      10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -177,6 +187,17 @@ alt-shift-w = 'move-node-to-workspace W'
 alt-shift-x = 'move-node-to-workspace X'
 alt-shift-y = 'move-node-to-workspace Y'
 alt-shift-z = 'move-node-to-workspace Z'
+
+[workspace-to-monitor-force-assignment]
+1 = 'main'
+2 = 'main'
+3 = 'main'
+4 = 'main'
+5 = 'main'
+6 = ['secondary', 'main']
+7 = ['secondary', 'main']
+8 = ['secondary', 'main']
+9 = ['secondary', 'main']
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace-back-and-forth
 alt-tab = 'workspace-back-and-forth'
