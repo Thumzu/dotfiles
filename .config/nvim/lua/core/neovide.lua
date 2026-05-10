@@ -1,6 +1,6 @@
 -- vim.o.guifont = "JetbrainsMono Nerd Font:h15:#h-none"
-vim.o.guifont = "Iosevka Nerd Font:h18:#h-none"
--- vim.o.guifont = "Berkeley Mono:h18:#h-none"
+-- vim.o.guifont = "Iosevka Nerd Font:h18:#h-none"
+vim.o.guifont = "Berkeley Mono:h18:#h-none"
 
 vim.opt.linespace = 5
 
