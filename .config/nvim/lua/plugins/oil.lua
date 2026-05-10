@@ -4,6 +4,9 @@ return {
 		opts = {
 			view_options = { show_hidden = true },
 			win_options = { signcolumn = "yes:1" },
+			float = { border = "rounded" },
+			confirmation = { border = "rounded" },
+			progress = { border = "rounded" },
 		},
 		dependencies = { "kyazdani42/nvim-web-devicons" },
 		keys = {
