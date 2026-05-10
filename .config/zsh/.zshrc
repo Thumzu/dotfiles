@@ -33,6 +33,9 @@ alias tmk="tmux kill-server"
 alias tms="tmux-sessionizer"
 alias tma="tmux attach"
 
+# Yazi
+alias y="yazi"
+
 ### Beam Cursor
 ###############
 fix_cursor() {
@@ -76,36 +79,60 @@ vp() {
 export PATH=/opt/homebrew/bin:$PATH
 
 # Minecraft
-# alias java="/Users/hamzahmad/Library/Application\ Support/minecraft/runtime/java-runtime-delta/mac-os-arm64/java-runtime-delta/jre.bundle/Contents/Home/bin/java -jar"
+alias java="/Users/hamzahmad/Library/Application\ Support/minecraft/runtime/java-runtime-delta/mac-os-arm64/java-runtime-delta/jre.bundle/Contents/Home/bin/java -jar"
 
 # Plugins
 source ~/.config/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
 
 # Java
-alias java="/opt/homebrew/opt/openjdk@24/bin/java"
-alias javac="/opt/homebrew/opt/openjdk@24/bin/javac"
+# alias java="/opt/homebrew/opt/openjdk@24/bin/java"
+# alias javac="/opt/homebrew/opt/openjdk@24/bin/javac"
 
 # Eza
 alias ls="eza --color=always --group-directories-first --icons"
 alias l="eza -al --color=always --group-directories-first --icons"
 alias la="eza -a --color=always --group-directories-first --icons"
 
-# # Catppuccin Macchiato
+# # Catppuccin Mocha
 # export FZF_DEFAULT_OPTS=" \
-# --color=bg+:#363A4F,bg:#24273A,spinner:#F4DBD6,hl:#ED8796 \
-# --color=fg:#CAD3F5,header:#ED8796,info:#C6A0F6,pointer:#F4DBD6 \
-# --color=marker:#B7BDF8,fg+:#CAD3F5,prompt:#C6A0F6,hl+:#ED8796 \
-# --color=selected-bg:#494D64 \
-# --color=border:#6E738D,label:#CAD3F5"
+# --color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
+# --color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
+# --color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+# --color=selected-bg:#45475A \
+# --color=border:#6C7086,label:#CDD6F4"
 
-# Catppuccin Mocha
+# # Gruber Darker
+# export FZF_DEFAULT_OPTS=" \
+# --color=bg+:#3c3c3c,bg:#181818,spinner:#ffdd33,hl:#ff4f58 \
+# --color=fg:#e4e4ef,header:#ff4f58,info:#ffdd33,pointer:#ffdd33 \
+# --color=marker:#ffdd33,fg+:#f4f4ff,prompt:#ffdd33,hl+:#ff4f58 \
+# --color=selected-bg:#3c3c3c \
+# --color=border:#5f5f5f,label:#e4e4ef"
+
+# Coding With Sphere Custom Theme
 export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
---color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
---color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
---color=selected-bg:#45475A \
---color=border:#6C7086,label:#CDD6F4"
+--color=bg+:#262626,bg:#202020,spinner:#FFFEDB,hl:#C34143 \
+--color=fg:#FEFEFE,header:#C34143,info:#FFFEDB,pointer:#FFFEDB \
+--color=marker:#FFFEDB,fg+:#FEFEFE,prompt:#FFFEDB,hl+:#C34143 \
+--color=selected-bg:#303030 \
+--color=border:#676767,label:#FEFEFE"
 
 # Starship
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 eval "$(starship init zsh)"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
