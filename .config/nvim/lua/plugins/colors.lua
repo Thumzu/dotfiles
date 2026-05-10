@@ -8,9 +8,6 @@ return {
 			-- vim.cmd.colorscheme("gruber-darker")
 			-- vim.cmd.colorscheme("ghostty-default-style-dark")
 			vim.cmd.colorscheme("custom")
-			-- Apply your custom modifications
-			-- vim.api.nvim_set_hl(0, "NormalFloat", { link = "Normal" })
-			-- vim.api.nvim_set_hl(0, "FloatBorder", { link = "Normal" })
 		end,
 	},
 
