@@ -1,0 +1,25 @@
+onboarding = false
+
+[keys]
+prefix = "ctrl+t"
+
+# tmux `s` = session list; move settings out of the way
+settings = "prefix+shift+s"
+workspace_picker = "prefix+s"
+
+# tmux `d` = detach
+detach = "prefix+d"
+
+# tmux `,` = rename window
+rename_tab = "prefix+comma"
+
+# tmux `\` = side-by-side split
+split_vertical = "prefix+backslash"
+
+# tmux `r` = reload config; resize mode moves to shift+r
+reload_config = "prefix+r"
+resize_mode = "prefix+shift+r"
+
+[theme]
+name = "catppuccin"
+auto_switch = false
